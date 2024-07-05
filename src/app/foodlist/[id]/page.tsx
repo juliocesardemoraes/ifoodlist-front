@@ -126,7 +126,7 @@ export default function Page({ params }: { params: { id: string } }) {
           dataSuggestions.map((item) => (
             <>
               {ids.includes(item._id) ? (
-                <>AH</>
+                <></>
               ) : (
                 <>
                   <div
@@ -150,7 +150,6 @@ export default function Page({ params }: { params: { id: string } }) {
                     </div>
                     <div
                       className="chevron"
-                      target="_blank"
                       onClick={() => {
                         addRestaurant(item);
                       }}
